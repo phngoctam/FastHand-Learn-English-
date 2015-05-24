@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/TableLayoutListView"
+        android:layout_width="590dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border" >
+
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="590dp"
+            android:layout_height="wrap_content"
+            android:numColumns="5"
+            android:verticalSpacing="5dp" >
+        </GridView>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/TableLayoutListView"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLayout41"
+        android:layout_alignBottom="@+id/textViewLayout41"
+        android:layout_toLeftOf="@+id/textViewLayout41"
+        android:text="00.00" />
+
+    <TextView
+        android:id="@+id/textViewLayout41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtQuestion"
+        android:layout_alignLeft="@+id/txtScore"
+        android:text="s" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+		 android:background="#008000"
+        android:textColor="#FFFFFF"
+      	  
+        android:gravity="center"
+        android:text="Question"
+      
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="500dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txtTime"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressbar"
+       
+        android:layout_marginRight="41dp"
+        android:layout_toLeftOf="@+id/txtQuestion"
+        android:text="/80" />
+
+    <TextView
+        android:id="@+id/txtSoCau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 
+        android:layout_above="@+id/progressbar"
+        android:layout_toLeftOf="@+id/textView3"
+        android:text="00" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/txtSoCau"
+        android:layout_alignBottom="@+id/txtSoCau"
+        android:layout_alignLeft="@+id/TableLayoutListView"
+        android:background="@drawable/iconback" />
+
+    <Button
+        android:id="@+id/btn_Pause"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnBack"
+        android:background="@drawable/pause2" />
+
+</RelativeLayout>

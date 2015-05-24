@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="universityname_text">18dp</dimen>
+	<dimen name="button_width1">200dp</dimen>
+	<dimen name="button_width2">100dp</dimen>
+	<dimen name="text2">30dp</dimen>
+	<dimen name="subject_row_height">70dp</dimen>
+	<dimen name="subject_margin_row_leftright">50dp</dimen>
+	<dimen name="scores_margin_row_leftright">20dp</dimen>
+	<dimen name="subject_button_size">50dp</dimen>
+	<dimen name="subject_button_margin">10dp</dimen>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="6dip"
+    android:paddingTop="4dip" >
+
+    <TextView
+        android:id="@+id/txtSTT"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="125dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Score" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Time" />
+
+</LinearLayout>

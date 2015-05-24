@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="drawer_backround">#102669</color>
+    <color name="button">#4a72ed</color>
+    <color name="button_text">#ffffff</color>
+    <color name="text1">#ffffff</color>
+</resources>

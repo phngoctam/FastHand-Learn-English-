@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal" 
+    tools:context="com.example.game1.MainActivity" >
+
+   <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="35dp"
+        android:src="@drawable/ic_launcher"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_margin="35dp"
+	    android:orientation="vertical">
+    <Button
+        android:id="@+id/btnReview"
+        android:layout_width="@dimen/button_width1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/button"
+        android:text="Review"
+        android:textColor="@color/button_text" />
+
+    <Button
+        android:id="@+id/btnFast"
+        android:layout_width="@dimen/button_width1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/button"
+        android:text="Fast"
+        android:textColor="@color/button_text" />
+
+    <Button
+        android:id="@+id/btnSlow"
+        android:layout_width="@dimen/button_width1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/button"
+        android:text="Slow"
+        android:textColor="@color/button_text" />
+
+	</LinearLayout>
+</LinearLayout>

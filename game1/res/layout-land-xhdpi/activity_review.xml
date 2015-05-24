@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_score"
+    android:orientation="vertical" >
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" >
+    </ImageSwitcher>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imageSwitcher"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="54dp"
+        android:layout_toRightOf="@+id/imageSwitcher"
+        android:background="@drawable/arrow_toright"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/buttonPrevious"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/buttonNext"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/imageSwitcher"
+        android:background="@drawable/arrow_toleft"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/buttonSound"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/imageSwitcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/speaker"
+        android:text="Sound" />
+
+    <TextSwitcher
+        android:id="@+id/textSwitcher"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buttonSound"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:scaleType="fitCenter" >
+    </TextSwitcher>
+
+    <ImageView
+        android:id="@+id/buttonBACK"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textSwitcher"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"
+        android:text="BACK" />
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/TableLayoutListView"
+        android:layout_width="800dp"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/progressbar"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border" >
+
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="800dp"
+            android:layout_height="wrap_content"
+            android:numColumns="5"
+            android:verticalSpacing="5dp" >
+        </GridView>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_alignRight="@+id/TableLayoutListView"
+        
+        android:text="0" />
+
+     <TextView
+         android:id="@+id/txtTime"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/textViewLayout41"
+         android:layout_alignBottom="@+id/textViewLayout41"
+         android:layout_toLeftOf="@+id/textViewLayout41"
+         android:text="00.00" />
+
+    <TextView
+        android:id="@+id/textViewLayout41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtQuestion"
+        android:layout_alignLeft="@+id/txtScore"
+        android:text="s" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        
+         android:background="#008000"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="Question"
+        
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="570dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3.5dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressbar"
+        android:layout_marginRight="27dp"
+        android:layout_toLeftOf="@+id/txtQuestion"
+        android:text="/80" />
+
+    <TextView
+        android:id="@+id/txtSoCau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressbar"
+        android:layout_toLeftOf="@+id/textView3"
+        android:text="00" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/progressbar"
+        android:layout_alignLeft="@+id/TableLayoutListView"
+        android:background="@drawable/iconback" />
+
+    <Button
+        android:id="@+id/btn_Pause"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/progressbar"
+        android:layout_marginRight="9dp"
+        android:layout_toLeftOf="@+id/txtSoCau"
+        android:background="@drawable/pause2" />
+
+
+</RelativeLayout>
